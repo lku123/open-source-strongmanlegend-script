@@ -1,0 +1,279 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.100878939, 0, 0.0548780486, 0)
+Frame.Size = UDim2.new(0, 703, 0, 437)
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton.BorderColor3 = Color3.fromRGB(85, 85, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.159443989, 0, 0.258384138, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Autofarm Both Stats"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_2.BorderColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.159443989, 0, 0.441310972, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = "Autofarm Pushup"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+TextButton_3.Parent = ScreenGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_3.BorderColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.159443989, 0, 0.624237776, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.Cartoon
+TextButton_3.Text = "Autofarm Situp"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = ScreenGui
+TextButton_4.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_4.BorderColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.474899292, 0, 0.258384138, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.Cartoon
+TextButton_4.Text = "Speed Autofarm"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.464515328, 0, 0.441310972, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "too lazy to make an actual gui. sorry :("
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextButton_5.Parent = ScreenGui
+TextButton_5.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+TextButton_5.BorderColor3 = Color3.fromRGB(85, 85, 255)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.464798272, 0, 0.624237776, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.Cartoon
+TextButton_5.Text = "Auto Rebirth"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.110979944, 0, 0.720274389, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "press c to close gui"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = ScreenGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.464515299, 0, 0.720274389, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "press x to open gui again"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = ScreenGui
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.316788018, 0, 0.144054875, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Strongman Legend Script"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+-- Scripts:
+
+local function TWYHE_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = {
+				[1] = "StartDevice",
+				[2] = "Handstand"
+			}
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("DeviceControl"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = {
+					[1] = "Active"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("BenchPressControl"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(TWYHE_fake_script)()
+local function OWWGSOJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = {
+				[1] = "StartDevice",
+				[2] = "PushUps"
+			}
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("DeviceControl"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = {
+					[1] = "Active"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("BenchPressControl"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(OWWGSOJ_fake_script)()
+local function RCJHJ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = {
+				[1] = "StartDevice",
+				[2] = "SitUps"
+			}
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("DeviceControl"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+	
+		while wait() do
+			local args = {
+				[1] = {
+					[1] = "Active"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("BenchPressControl"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(RCJHJ_fake_script)()
+local function WSICJ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local safeblock = Instance.new("Part")
+		local ws = game:GetService("Workspace")
+		safeblock.Parent = game.Workspace
+		safeblock.Name = "SafeBlock"
+		safeblock.Anchored = true
+		safeblock.Transparency = 0
+		safeblock.CanCollide = true
+		safeblock.Size = Vector3.new(20,5,25)
+		safeblock.Position = Vector3.new(103.131676, 183.573639, -29.9221039, -8.42316439e-09, -0.0199005343, 0.999801993, -8.76135609e-09, 0.999801993, 0.0199005343, -1, -8.59199556e-09, -8.59585114e-09)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(103.104004, 17.1201687, -30.4691467, -0.0086490009, 6.68577655e-08, 0.999962568, 3.97187101e-08, 1, -6.65167263e-08, -0.999962568, 3.91419199e-08, -0.0086490009)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(103.555405, 188.001862, -30.1923828, 0.00872703735, -3.53398022e-09, 0.999961913, -2.63917634e-08, 1, 3.76444564e-09, -0.999961913, -2.64236117e-08, 0.00872703735)
+	
+	end)
+end
+coroutine.wrap(WSICJ_fake_script)()
+local function FTCKJKK_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while wait() do
+			local args = {
+				[1] = {
+					[1] = "Relive"
+				}
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("ModuleScript"):WaitForChild("Control"):WaitForChild("PlayerControl"):WaitForChild("RemoteFunction"):InvokeServer(unpack(args))
+		end
+	end)
+end
+coroutine.wrap(FTCKJKK_fake_script)()
+local function BTKC_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local uis = game:GetService("UserInputService")
+	local gui = script.Parent
+	
+	
+	uis.InputBegan:Connect(function(Player)
+	
+		if Player.KeyCode == Enum.KeyCode.C then
+	
+			gui.Enabled = false
+		end
+	
+	end)
+end
+coroutine.wrap(BTKC_fake_script)()
+local function UYOGVHD_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local uis = game:GetService("UserInputService")
+	local gui = script.Parent
+	
+	
+	uis.InputBegan:Connect(function(Player)
+	
+		if Player.KeyCode == Enum.KeyCode.X then
+	
+			gui.Enabled = true
+		end
+	
+	end)
+end
+coroutine.wrap(UYOGVHD_fake_script)()
